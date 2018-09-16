@@ -40,4 +40,4 @@ if __name__ == '__main__':
   PA.test()
   PA.append(["-", 123, 456, "testgs"])
   PA.backup('./../storage/csv.csv')
-  PA.range_clear("A17:D10000")
+  PA.range_clear("A17:L20000")
