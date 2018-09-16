@@ -13,3 +13,7 @@
 ____________________________________________________
 
 TIPS
+
+
+cd pi_loger
+git pull origin master
