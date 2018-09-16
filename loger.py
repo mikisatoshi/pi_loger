@@ -9,4 +9,4 @@ class PiLoger():
     pass
 
 if __name__ == '__main__':
-  pass
+  print('hallo world')
