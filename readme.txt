@@ -1,14 +1,14 @@
-dir tree
-
-scheduler.sh
-backup.sh
-[certification]
-[storage]
-[pi_loger]
-- access.py
-- loger.py
-- backup.py
-- upload.sh
+/home/repo_loger/
+- scheduler.sh
+- loger.sh
+- backup.sh
+-
+- [certification]
+- [storage]
+- [pi_loger]
+--- access.py
+--- loger.py
+--- backup.py
 
 
 
