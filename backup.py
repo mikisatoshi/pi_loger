@@ -10,7 +10,7 @@ def main():
     para = json.load(f)
   print(para)
   PA = acc.PiAccess(para["bookname"],para["sheetname"],para["keyname"])
-  PA.backup('./../storage/now/'+str(datetime.date.today())+'.csv')
+  PA.backup('./../storage/now/'+para["sheetname"]+'_'+str(datetime.date.today())+'.csv')
   PA.range_clear("A17:K20000")
 
 if __name__ == '__main__':
