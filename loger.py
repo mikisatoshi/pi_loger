@@ -14,8 +14,12 @@ class PiLoger():
     return values
 
 def main():
-  with open("./../certification/unique_name.json") as f:
-    para = json.load(f)
+  try:
+    with open("./../certification/unique_name.json") as f:
+      para = json.load(f)
+  except:
+    with open("./certification/unique_name.json") as f:
+      para = json.load(f)
   print(para)
   PA = acc.PiAccess(para["bookname"],para["sheetname"],para["keyname"])
 

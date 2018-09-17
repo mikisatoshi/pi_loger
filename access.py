@@ -36,7 +36,7 @@ class PiAccess():
 
 
 if __name__ == '__main__':
-  PA = PiAccess('loger_test', 'sheet1', './../certification/26b.json')
+  PA = PiAccess('loger_test', 'sheet1', './../certification/miyamori.json')
   PA.test()
   PA.append(["-", 123, 456, "testgs"])
   PA.backup('./../storage/csv.csv')
