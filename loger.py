@@ -13,6 +13,9 @@ class PiLoger():
     values = ["-",str(datetime.datetime.now()), 9999, 9999, 9999, 9999 ,0 ,0, 0, 0, "test"]
     return values
 
+  def get_data(self):
+    pass
+
 def main():
   try:
     with open("./../certification/unique_name.json") as f:

@@ -14,6 +14,8 @@ ____________________________________________________
 
 TIPS
 
+crontab now runing
+
 
 cd pi_loger
 git pull origin master
