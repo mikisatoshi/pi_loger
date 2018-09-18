@@ -4,13 +4,16 @@ import numpy as np
 import access as acc
 import pandas as pd
 import datetime
+from math import sin
 
 class PiLoger():
   def __init__(self, ch = 8):
     self.ch = ch
 
   def get_dummy_data(self):
-    values = ["-",str(datetime.datetime.now()), 9999, 9999, 9999, 9999 ,0 ,0, 0, 0, "test"]
+    dt_now = datetime.datetime.now()
+    value = dt_now.hour * 60 + dt_now.minute
+    values = ["-",str(datetime.datetime.now()), value, sin(value/100), 9999, 9999 ,0 ,0, 0, 0, "test"]
     return values
 
   def get_data(self):
