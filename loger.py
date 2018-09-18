@@ -4,7 +4,7 @@ import numpy as np
 import access as acc
 import pandas as pd
 import datetime
-from math import sin
+from math import sin,cos
 
 class PiLoger():
   def __init__(self, ch = 8):
@@ -13,7 +13,7 @@ class PiLoger():
   def get_dummy_data(self):
     dt_now = datetime.datetime.now()
     value = dt_now.hour * 60 + dt_now.minute
-    values = ["-",str(datetime.datetime.now()), value, sin(value/100), 9999, 9999 ,0 ,0, 0, 0, "test"]
+    values = ["-",str(datetime.datetime.now()), value, sin(value/100), cos(value/10), 9999 ,0 ,0, 0, 0, "test"]
     return values
 
   def get_data(self):
