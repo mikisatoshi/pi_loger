@@ -2,7 +2,6 @@
 import json
 import numpy as np
 import access as acc
-import pandas as pd
 import datetime
 from math import sin,cos
 
