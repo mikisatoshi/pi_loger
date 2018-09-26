@@ -19,6 +19,8 @@ class PiLoger():
     return values
 
   def get_data(self):
+    dt_now = datetime.datetime.now()
+    value = dt_now.hour * 60 + dt_now.minute
     values = bme280_.getData()
     return  ["-",str(datetime.datetime.now()), value, values[0], values[1], values[2], 0 ,0, 0, 0, "test"]
 
