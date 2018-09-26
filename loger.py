@@ -4,6 +4,7 @@ import numpy as np
 import access as acc
 import datetime
 from math import sin,cos
+import bme280_
 
 class PiLoger():
   def __init__(self, ch = 8):
@@ -18,7 +19,8 @@ class PiLoger():
     return values
 
   def get_data(self):
-    pass
+    values = bme280_.getData()
+    return  ["-",str(datetime.datetime.now()), values[0], values[1], values[2], 9999 ,0 ,0, 0, 0, "test"]
 
 def main():
   try:
@@ -31,7 +33,7 @@ def main():
   PA = acc.PiAccess(para["bookname"],para["sheetname"],para["keyname"])
 
   PL = PiLoger(ch = 8)
-  PA.append(PL.get_dummy_data())
+  PA.append(PL.get_data())
 
 
 if __name__ == '__main__':
