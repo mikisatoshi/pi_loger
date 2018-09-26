@@ -20,7 +20,7 @@ class PiLoger():
 
   def get_data(self):
     values = bme280_.getData()
-    return  ["-",str(datetime.datetime.now()), values[0], values[1], values[2], 9999 ,0 ,0, 0, 0, "test"]
+    return  ["-",str(datetime.datetime.now()), value, values[0], values[1], values[2], 0 ,0, 0, 0, "test"]
 
 def main():
   try:
