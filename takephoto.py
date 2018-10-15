@@ -16,7 +16,7 @@ def main():
     camera.start_preview()
     # Camera warm-up time
     time.sleep(2)
-    camera.capture('/../strage/photo/'+str(datetime.datetime.now())+'my_picture.jpg')
+    camera.capture('/../storage/photo/'+str(datetime.datetime.now())+'.jpg')
 
 
 if __name__ == '__main__':
