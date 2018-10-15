@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import json,time,datetime
+import json, time, datetime
 import picamera
 
 
@@ -16,7 +16,7 @@ def main():
     camera.start_preview()
     # Camera warm-up time
     time.sleep(2)
-    camera.capture('my_picture.jpg')
+    camera.capture('/../strage/photo/'+str(datetime.datetime.now())+'my_picture.jpg')
 
 
 if __name__ == '__main__':
