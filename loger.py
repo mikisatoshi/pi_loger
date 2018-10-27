@@ -46,6 +46,7 @@ if __name__ == '__main__':
     pass
 
   try:
-    takephoto.main()
+    # takephoto.main()
+    pass
   except:
     pass
