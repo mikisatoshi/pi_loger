@@ -5,6 +5,7 @@ import access as acc
 import datetime
 from math import sin,cos
 import bme280_
+import takephoto
 
 class PiLoger():
   def __init__(self, ch = 8):
@@ -39,4 +40,12 @@ def main():
 
 
 if __name__ == '__main__':
-  main()
+  try:
+    main()
+  except:
+    pass
+
+  try:
+    takephoto.main()
+  except:
+    pass
